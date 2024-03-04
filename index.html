@@ -8,15 +8,24 @@ Khaled's Test Area
 
     <script type="application/ld+json" id="me">
         {
-        "@context": 
-        {
-            "foaf": "http://xmlns.com/foaf/0.1/"
-        },
-        "@id": "https://itskhaled.github.io/#me",
-        "@type": "foaf:Person",
-        "foaf:name": "Khaled Khaled"
+            "@context": 
+            {
+                "foaf": "http://xmlns.com/foaf/0.1/"
+                "schema": "http://schema.org/",
+
+            },
+            "@id": "https://itskhaled.github.io/#me",
+            "@type": "foaf:Person",
+            foaf:givenName": { "@value": "Khaled", "@language": "en" }
+            foaf:familyName": { "@value": "Khaled", "@language": "en" }
+
+            "schema:birthDate": 
+            {
+                "@value": "2001-06-06",
+                "@type": "schema:Date"
+            },
+            "schema:nationality": "Lebanese",
+
         }
         </script>
-</head> 
-
-
+</head>
