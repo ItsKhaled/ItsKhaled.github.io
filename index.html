@@ -24,14 +24,14 @@ Khaled's Test Area
 
             "foaf:givenName": 
             [
-                { "@value": "Khaled", "@language": "en" },
-                { "@value": "خالد", "@language": "ar" }
+            { "@value": "خالد", "@language": "ar" },
+                { "@value": "Khaled", "@language": "en" }
             ],
             
             "foaf:familyName": 
             [
-                { "@value": "Khaled", "@language": "en" },
-                { "@value": "خالد", "@language": "ar" }
+            { "@value": "خالد", "@language": "ar" },
+                { "@value": "Khaled", "@language": "en" }
             ],
 
             "schema:birthDate": 
@@ -39,28 +39,32 @@ Khaled's Test Area
                 "@value": "2001-06-06",
                 "@type": "schema:Date"
             },
+
             "schema:jobTitle": "Professional Procrastinator",
             "schema:nationality": "Lebanese",
             
             "schema:memberOf": 
-            {
-                "@type": "schema:Organization",
-                "schema:name": "Ghent University"
-            },
-
-            "schema:memberOf": 
-            {
-                "@type": "schema:Organization",
-                "schema:name": "Student"
-            },
+            [
+                {
+                    "@type": "schema:Organization",
+                    "schema:name": "Ghent University"
+                },
+                {
+                    "@type": "schema:Organization",
+                    "schema:name": "Student"
+                },
+                {
+                    "@type": "schema:Organization",
+                    "schema:name": "Course",
+                    "schema:attendee": 
+                    {
+                        "@id": "https://pietercolpaert.be/teaching/kg/#2023-2024"
+                    }
+                }
+            ],
 
             "schema:email": "khaled.khaled@ugent.be",
-
-            "schema:attendee": 
-            {
-                "@id": "https://pietercolpaert.be/teaching/kg/#2023-2024"
-            },
-
+            
             "foaf:knows": 
             [
                 {
