@@ -4,24 +4,25 @@
 
 ## RDF play results 
 
->> <https://itskhaled.github.io/#me> <http://xmlns.com/foaf/0.1/givenName> "خالد"@ar, "Khaled"@en; <br />
->>     <http://xmlns.com/foaf/0.1/familyName> "خالد"@ar, "Khaled"@en; <br />
->>     <http://schema.org/birthDate> "2001-06-06"^^<http://schema.org/Date>; <br />
->>     <http://schema.org/jobTitle> "Professional Procrastinator"; <br />
->>     <http://schema.org/nationality> "Lebanese". <br />
->> _:df_4_5 a <http://schema.org/Organization>; <br />
->>     <http://schema.org/name> "Ghent University". <br />
->> <https://itskhaled.github.io/#me> <http://schema.org/memberOf> _:df_4_5. <br />
+> <https://itskhaled.github.io/#me> <http://xmlns.com/foaf/0.1/givenName> "خالد"@ar, "Khaled"@en; <br />
+>     &nbsp;<http://xmlns.com/foaf/0.1/familyName> "خالد"@ar, "Khaled"@en; <br />
+>     &nbsp;<http://schema.org/birthDate> "2001-06-06"^^<http://schema.org/Date>; <br />
+>     &nbsp;<http://schema.org/jobTitle> "Professional Procrastinator"; <br />
+>     &nbsp;<http://schema.org/nationality> "Lebanese". <br />
+> _:df_4_5 a <http://schema.org/Organization>; <br />
+>    &nbsp; <http://schema.org/name> "Ghent University". <br />
+> <https://itskhaled.github.io/#me> <http://schema.org/memberOf> _:df_4_5. <br />
 > _:df_4_6 a <http://schema.org/Organization>; <br />
->>     <http://schema.org/name> "Student". <br />
+>     &nbsp;<http://schema.org/name> "Student". <br />
 > <https://itskhaled.github.io/#me> <http://schema.org/memberOf> _:df_4_6. <br />
 > _:df_4_7 a <http://schema.org/Organization>; <br />
->>     <http://schema.org/name> "Course"; <br />
->>     <http://schema.org/attendee> <https://pietercolpaert.be/teaching/kg/#2023-2024>. <br />
+>     &nbsp;<http://schema.org/name> "Course"; <br />
+>     &nbsp;<http://schema.org/attendee> <https://pietercolpaert.be/teaching/kg/#2023-2024>. <br />
 > <https://itskhaled.github.io/#me> <http://schema.org/memberOf> _:df_4_7; <br />
->>     <http://schema.org/email> "khaled.khaled@ugent.be"; <br />
->>     <http://xmlns.com/foaf/0.1/knows> <https://kurijn.github.io/#me>, <https://pietercolpaert.be/#me>; <br />
->>     a <https://itskhaled.github.io/Person>
+>     &nbsp;<http://schema.org/email> "khaled.khaled@ugent.be"; <br />
+>     &nbsp;<http://xmlns.com/foaf/0.1/knows> <https://kurijn.github.io/#me>, <https://pietercolpaert.be/#me>; <br />
+>     &nbsp;a <https://itskhaled.github.io/Person>
+
 
 ## Curl results
 
