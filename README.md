@@ -4,7 +4,7 @@
 
 ## ME :)
 
-[https://itskhaled.github.io/#me]
+https://itskhaled.github.io/#me
 
 ## RDF play results 
 
