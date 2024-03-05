@@ -10,14 +10,17 @@ Khaled's Test Area
         {
             "@context": 
             [
-               {"schema": "http://schema.org/"},
+                {
+                    "schema": "http://schema.org/"
+                },
                {
-              	"foaf": "http://xmlns.com/foaf/0.1/",
-    			"foaf:currentProject": {"@type":"@id"}
+              	    "foaf": "http://xmlns.com/foaf/0.1/",
+    			    "foaf:currentProject": {"@type":"@id"}
                }
             ],
     		"@type": "Person",
             "@id": "https://itskhaled.github.io/#me",
+
             "foaf:givenName": { "@value": "Khaled", "@language": "en" },
             "foaf:familyName": { "@value": "Khaled", "@language": "en" },
 
@@ -26,8 +29,37 @@ Khaled's Test Area
                 "@value": "2001-06-06",
                 "@type": "schema:Date"
             },
+            "schema:jobTitle": "Professional Procrastinator",
             "schema:nationality": "Lebanese",
-            "schema:email": "khaled.khaled@ugent.be"
+            
+            "schema:memberOf": 
+            {
+                "@type": "schema:Organization",
+                "schema:name": "Ghent University"
+            },
+
+            "schema:memberOf": 
+            {
+                "@type": "schema:Organization",
+                "schema:name": "Student"
+            },
+
+            "schema:email": "khaled.khaled@ugent.be",
+
+            "schema:attendee": 
+            {
+                "@id": "https://pietercolpaert.be/teaching/kg/#2023-2024"
+            },
+
+            "foaf:knows": 
+            [
+                {
+                    "@id": "https://kurijn.github.io/#me"
+                },
+                {
+                    "@id": "https://pietercolpaert.be/#me"
+                }
+            ]
         }
         </script>
 </head>
