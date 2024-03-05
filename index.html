@@ -10,7 +10,7 @@ Khaled's Test Area
         {
             "@context": 
             [
-                "http://schema.org/",
+               {"schema": "http://schema.org/"},
                {
               	"foaf": "http://xmlns.com/foaf/0.1/",
     			"foaf:currentProject": {"@type":"@id"}
@@ -21,13 +21,13 @@ Khaled's Test Area
             "foaf:givenName": { "@value": "Khaled", "@language": "en" },
             "foaf:familyName": { "@value": "Khaled", "@language": "en" },
 
-            "birthDate": 
+            "schema:birthDate": 
             {
                 "@value": "2001-06-06",
-                "@type": "Date"
+                "@type": "schema:Date"
             },
-            "nationality": "Lebanese",
-            "email": "khaled.khaled@ugent.be"
+            "schema:nationality": "Lebanese",
+            "schema:email": "khaled.khaled@ugent.be"
         }
         </script>
 </head>
