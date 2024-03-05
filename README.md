@@ -2,6 +2,10 @@
 
 > [Link to page](https://itskhaled.github.io/)
 
+## ME :)
+
+[https://itskhaled.github.io/#me]
+
 ## RDF play results 
 
 > <https://itskhaled.github.io/#me> <http://xmlns.com/foaf/0.1/givenName> "خالد"@ar, "Khaled"@en; <br />
