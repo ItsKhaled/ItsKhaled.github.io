@@ -36,23 +36,30 @@ https://itskhaled.github.io/#me
 >> Server: GitHub.com <br />
 >> Content-Type: text/html; charset=utf-8 <br />
 >> permissions-policy: interest-cohort=() <br />
->> Last-Modified: Tue, 05 Mar 2024 20:36:48 GMT <br />
+>> Last-Modified: Tue, 05 Mar 2024 21:14:56 GMT <br />
 >> Access-Control-Allow-Origin: * <br />
 >> Strict-Transport-Security: max-age=31556952 <br />
 >> ETag: "65e78260-84f" <br />
 >> expires: Tue, 05 Mar 2024 20:50:13 GMT <br />
 >> Cache-Control: max-age=600 <br />
 >> x-proxy-cache: MISS <br />
->> X-GitHub-Request-Id: 6D7C:33FDF6:46ABC:47EB6:65E7832C <br />
+>> X-GitHub-Request-Id: A778:2AD818:D4FF2:D8D8F:65E78BDC <br />
 >> Accept-Ranges: bytes <br />
->> Date: Tue, 05 Mar 2024 20:40:13 GMT <br />
+>> Date: Tue, 05 Mar 2024 21:17:32 GMT <br />
 >> Via: 1.1 varnish <br />
->> Age: 0 <br />
+>> Age: 15 <br />
 >> X-Served-By: cache-bru1480046-BRU <br />
->> X-Cache: MISS <br />
->> X-Cache-Hits: 0 <br />
->> X-Timer: S1709671213.238814,VS0,VE114 <br />
+>> X-Cache: HIT <br />
+>> X-Cache-Hits: 1 <br />
+>> X-Timer: S1709673453.669816,VS0,VE1 <br />
 >> Vary: Accept-Encoding <br />
->> X-Fastly-Request-ID: 4bc285b7bf606d60fd2d6c5475615e53b21a7832 <br />
+>> X-Fastly-Request-ID: cf1138215f6daef6acd1dba831e27d1d89aee9dc <br />
+
+## Comments
+
+>> Content-Type: text/html; charset=utf-8
+Here is indicated the content
+
+
 
 
