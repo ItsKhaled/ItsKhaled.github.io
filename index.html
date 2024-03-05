@@ -13,16 +13,26 @@ Khaled's Test Area
                 {
                     "schema": "http://schema.org/"
                 },
-               {
+                {
               	    "foaf": "http://xmlns.com/foaf/0.1/",
     			    "foaf:currentProject": {"@type":"@id"}
-               }
+                }
             ],
+
     		"@type": "Person",
             "@id": "https://itskhaled.github.io/#me",
 
-            "foaf:givenName": { "@value": "Khaled", "@language": "en" },
-            "foaf:familyName": { "@value": "Khaled", "@language": "en" },
+            "foaf:givenName": 
+            [
+                { "@value": "Khaled", "@language": "en" },
+                { "@value": "خالد", "@language": "ar" }
+            ],
+            
+            "foaf:familyName": 
+            [
+                { "@value": "Khaled", "@language": "en" },
+                { "@value": "خالد", "@language": "ar" }
+            ],
 
             "schema:birthDate": 
             {
