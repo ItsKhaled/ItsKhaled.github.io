@@ -4,14 +4,14 @@
 
 ## RDF play results 
 
-> <https://itskhaled.github.io/#me> <http://xmlns.com/foaf/0.1/givenName> "خالد"@ar, "Khaled"@en; <br />
+>> <https://itskhaled.github.io/#me> <http://xmlns.com/foaf/0.1/givenName> "خالد"@ar, "Khaled"@en; <br />
 >>     <http://xmlns.com/foaf/0.1/familyName> "خالد"@ar, "Khaled"@en; <br />
 >>     <http://schema.org/birthDate> "2001-06-06"^^<http://schema.org/Date>; <br />
 >>     <http://schema.org/jobTitle> "Professional Procrastinator"; <br />
 >>     <http://schema.org/nationality> "Lebanese". <br />
-> _:df_4_5 a <http://schema.org/Organization>; <br />
+>> _:df_4_5 a <http://schema.org/Organization>; <br />
 >>     <http://schema.org/name> "Ghent University". <br />
-> <https://itskhaled.github.io/#me> <http://schema.org/memberOf> _:df_4_5. <br />
+>> <https://itskhaled.github.io/#me> <http://schema.org/memberOf> _:df_4_5. <br />
 > _:df_4_6 a <http://schema.org/Organization>; <br />
 >>     <http://schema.org/name> "Student". <br />
 > <https://itskhaled.github.io/#me> <http://schema.org/memberOf> _:df_4_6. <br />
