@@ -56,10 +56,11 @@ https://itskhaled.github.io/#me
 >> X-Fastly-Request-ID: cf1138215f6daef6acd1dba831e27d1d89aee9dc <br />
 
 ## Comments
+While I don't have my own website, I can examine what features come with the GitHub page provided to me.
 
->> Content-Type: text/html; charset=utf-8
-Here is indicated the content
+>> X-Served-By: cache-bru1480046-BRU <br />
+>> X-Cache: HIT <br />
+>> X-Cache-Hits: 1 <br />
 
-
-
+Here we can see that the page supports caching which can prevent the website from slowing down and keep loading (with a maximum age for the page)
 
