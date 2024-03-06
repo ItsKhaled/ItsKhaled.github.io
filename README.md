@@ -68,7 +68,7 @@ First, it is obvious that Github uses httpS, as they should.
 > X-Cache: HIT <br />
 > X-Cache-Hits: 1 <br />
 
-Here we can see that the page supports caching which can prevent the website from slowing down and keep loading, based on maximum page age.
+Here we can see that the page supports caching, which can prevent the website from slowing down and keep loading based on maximum page age.
 
 > Access-Control-Allow-Origin: * <br />
 
