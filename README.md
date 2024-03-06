@@ -58,9 +58,19 @@ https://itskhaled.github.io/#me
 ## Comments
 While I don't have my own website, I can examine what features come with the GitHub page provided to me.
 
->> X-Served-By: cache-bru1480046-BRU <br />
->> X-Cache: HIT <br />
->> X-Cache-Hits: 1 <br />
+> 'C:\Users\Khaled\Desktop\ItsKhaled.github.io>curl -I https://itskhaled.github.io/' <br />
 
-Here we can see that the page supports caching which can prevent the website from slowing down and keep loading (with a maximum age for the page)
+First, it is obvious that Github uses httpS, as they should.
+
+> Cache-Control: max-age=600 <br />
+> Age: 15 <br />
+> X-Served-By: cache-bru1480046-BRU <br />
+> X-Cache: HIT <br />
+> X-Cache-Hits: 1 <br />
+
+Here we can see that the page supports caching which can prevent the website from slowing down and keep loading, based on maximum page age.
+
+> Access-Control-Allow-Origin: * <br />
+
+Github also enables CORS by default, so a green flag for Linked Open Data :)
 
