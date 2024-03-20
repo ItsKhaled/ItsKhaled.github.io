@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Ontology</title>
+</head>
 
-    <!-- Define the photo ontology -->
+<body>
+    <!-- Include the ontology definition within the content of the page -->
     <script type="text/turtle" id="photo-ontology">
         @prefix kk: <https://itskhaled.github.io/photo-ontology#> .
         @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -62,14 +64,8 @@
             rdfs:range geo:Point ;
             rdfs:subPropertyOf foaf:based_near .
     </script>
-</head>
 
-<body>
-    <!-- You can include additional content here if needed -->
-
-    <!-- Navigation link to the ontology -->
-    <a href="#photo-ontology">View Photo Ontology</a>
-
+    <a name="photo-ontology"></a>
 </body>
 
 </html>
