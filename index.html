@@ -82,22 +82,132 @@ Khaled's Test Area<br><br><br><br><br><br>
         }
         </script>
 
+        <script type="text/turtle" id="photoOntology">
+            @prefix kk: <https://itskhaled.github.io/photo-ontology#> .
+            @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+            @prefix owl: <http://www.w3.org/2002/07/owl#> .
+            @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+            @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+            @prefix schema: <http://schema.org/> .
+            @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+        
+            # Ontology definition
+            kk:PhotoOntology a owl:Ontology ;
+                rdfs:label "Photo Ontology" ;
+                rdfs:comment "An ontology to describe photos" .
+        
+            # Class definition
+            kk:Photo a owl:Class ;
+                rdfs:label "Photo" ;
+                rdfs:comment "A photograph" ;
+                rdfs:subClassOf foaf:Image .
+        
+            # Property definitions
+            kk:hasTitle a rdf:Property ;
+                rdfs:label "hasTitle" ;
+                rdfs:comment "Title of the photo" ;
+                rdfs:domain kk:Photo ;
+                rdfs:range rdf:Literal ;
+                owl:equivalentProperty rdfs:label .
+        
+            kk:hasDescription a rdf:Property ;
+                rdfs:label "hasDescription" ;
+                rdfs:comment "Description of the photo" ;
+                rdfs:domain kk:Photo ;
+                rdfs:range rdf:Literal ;
+                owl:equivalentProperty rdfs:comment .
+        
+            kk:hasPhotographer a rdf:Property ;
+                rdfs:label "hasPhotographer" ;
+                rdfs:comment "Photographer of the image" ;
+                rdfs:domain kk:Photo ;
+                rdfs:range foaf:Person ;
+                owl:equivalentProperty foaf:maker .
+        
+            kk:hasTakenDate a rdf:Property ;
+                rdfs:label "hasTakenDate" ;
+                rdfs:comment "Creation date of the photo" ;
+                rdfs:domain kk:Photo ;
+                rdfs:range schema:Date .
+        
+            kk:hasLocation a rdf:Property ;
+                rdfs:label "hasLocation" ;
+                rdfs:comment "Location where the photo was taken" ;
+                rdfs:domain kk:Photo ;
+                rdfs:range geo:Point ;
+                rdfs:subPropertyOf foaf:based_near .
+        </script>
+        
+
 
 </head>
 
 <body>
     <header>
 
-        <a href="https://www.verknipt.org/">
+        <section id="photoMoi">
 
-            <img src="me.jpg" alt="Moi">
+            <script type="text/turtle" id="photoMoi">
+                <https://itskhaled.github.io/#me> a foaf:Person;
+                    foaf:name "Khaled Khaled"@en;
+                    foaf:depiction <https://itskhaled.github.io/me.jpg>.
 
-        </a>
+                <https://itskhaled.github.io/me.jpg> a kk:Photo ;
+                    kk:hasTitle "Nice rave pic";
+                    kk:hasDescription "Me dancing unsuspectingly while being photographed from behind";
+                    kk:hasPhotographer _:photographer ;
+                    kk:hasTakenDate "2023-02-18"^^xsd:date ;
+                    kk:hasLocation 
+                    [ 
+                            a geo:Point ;
+                            geo:lat "48.827543" ;
+                            geo:long "2.292538"
+                    ] ;
+                    foaf:depicts <https://itskhaled.github.io/#me> .
 
-        <a href="https://www.wikidata.org/wiki/Q12219879">
+                _:photographer a foaf:Person ;
+                    foaf:name "Unknown nice lady" .
+            </script>
 
-            <img src="raouche.jpg" alt="Raouche rock arc">
+            <a href="https://www.verknipt.org/">
 
-        </a>
+                <img src="me.jpg" alt="Moi">
+
+            </a>
+
+        </section>
+
+        <br>
+
+
+        <section id="photoRaouche">
+
+            <script type="text/turtle" id="photoRaouche">
+                <https://www.wikidata.org/wiki/Q12219879> a schema:Landform;
+                    foaf:name "Raouché Rocks"@en;
+                    foaf:depiction <https://itskhaled.github.io/raouche.jpg>.
+
+                <https://itskhaled.github.io/raouche.jpg> a kk:Photo ;
+                    kk:hasTitle "Sunset at Raouché";
+                    kk:hasDescription "Photo showing the sunset behind the natural rock arc found at Raouché";
+                    kk:hasPhotographer <https://itskhaled.github.io/#me>;
+                    kk:hasTakenDate "2020-08-05"^^xsd:date;
+                    kk:hasLocation 
+                    [ 
+                            a geo:Point ;
+                            geo:lat "33.8875" ;
+                            geo:long "35.475" 
+                    ] ;
+                    foaf:depicts <https://www.wikidata.org/wiki/Q12219879> .
+            </script>
+
+            <a href="https://www.wikidata.org/wiki/Q12219879">
+
+                <img src="raouche.jpg" alt="Raouche rock arc">
+    
+            </a>
+            
+        </section>
+
     </header>
 </body>
