@@ -80,64 +80,7 @@ Khaled's Test Area<br><br><br>
                 }
             ]
         }
-        </script>
-
-        <script type="text/turtle" id="photoOntology">
-            @prefix kk: <https://itskhaled.github.io/photo-ontology#> .
-            @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-            @prefix owl: <http://www.w3.org/2002/07/owl#> .
-            @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-            @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-            @prefix schema: <http://schema.org/> .
-            @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-        
-            # Ontology definition
-            kk:PhotoOntology a owl:Ontology ;
-                rdfs:label "Photo Ontology" ;
-                rdfs:comment "An ontology to describe photos" .
-        
-            # Class definition
-            kk:Photo a owl:Class ;
-                rdfs:label "Photo" ;
-                rdfs:comment "A photograph" ;
-                rdfs:subClassOf foaf:Image .
-        
-            # Property definitions
-            kk:hasTitle a rdf:Property ;
-                rdfs:label "hasTitle" ;
-                rdfs:comment "Title of the photo" ;
-                rdfs:domain kk:Photo ;
-                rdfs:range rdf:Literal ;
-                owl:equivalentProperty rdfs:label .
-        
-            kk:hasDescription a rdf:Property ;
-                rdfs:label "hasDescription" ;
-                rdfs:comment "Description of the photo" ;
-                rdfs:domain kk:Photo ;
-                rdfs:range rdf:Literal ;
-                owl:equivalentProperty rdfs:comment .
-        
-            kk:hasPhotographer a rdf:Property ;
-                rdfs:label "hasPhotographer" ;
-                rdfs:comment "Photographer of the image" ;
-                rdfs:domain kk:Photo ;
-                rdfs:range foaf:Person ;
-                owl:equivalentProperty foaf:maker .
-        
-            kk:hasTakenDate a rdf:Property ;
-                rdfs:label "hasTakenDate" ;
-                rdfs:comment "Creation date of the photo" ;
-                rdfs:domain kk:Photo ;
-                rdfs:range schema:Date .
-        
-            kk:hasLocation a rdf:Property ;
-                rdfs:label "hasLocation" ;
-                rdfs:comment "Location where the photo was taken" ;
-                rdfs:domain kk:Photo ;
-                rdfs:range geo:Point ;
-                rdfs:subPropertyOf foaf:based_near .
-        </script>
-        
+    </script>
 
 
 </head>
@@ -178,7 +121,7 @@ Khaled's Test Area<br><br><br>
         </section>
         
         <br>
-        
+
         <section id="Raouche">
 
             <script type="text/turtle" id="Raouche">
